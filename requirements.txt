@@ -1,0 +1,17 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.4.1
+transformers==4.44.2
+pandas==2.2.3
+pyarrow==18.1.0
+numpy==1.26.4
+scikit-learn==1.5.2
+sklearn-crfsuite==0.5.0
+underthesea==6.8.4
+seqeval==1.2.2
+matplotlib==3.9.3
+mlflow==2.19.0
+SQLAlchemy==2.0.36
+fastapi==0.115.6
+uvicorn==0.32.1
+httpx==0.28.1
+pytest==8.3.4

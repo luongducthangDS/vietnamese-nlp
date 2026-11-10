@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+data/raw/
+artifacts/*.joblib
+artifacts/phobert_*/
+artifacts/preds/
+mlflow.db
+mlruns/
+.pytest_cache/

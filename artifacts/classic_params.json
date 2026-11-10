@@ -1,0 +1,7 @@
+{
+  "tfidf_lr_topic": {"C": 2, "balanced": false},
+  "tfidf_svm_topic": {"C": 0.2, "balanced": false},
+  "tfidf_lr_sentiment": {"C": 2, "balanced": true},
+  "tfidf_svm_sentiment": {"C": 1, "balanced": false},
+  "crf_ner": {"c1": 0.2, "c2": 0.1}
+}
