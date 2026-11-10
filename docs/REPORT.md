@@ -6,9 +6,9 @@ UIT-VSFC test set: 3166 feedback sentences. OOD set: 1300 texts (1000 banking-ne
 
 | Model | Accuracy | Macro-F1 | Weighted-F1 | p50 latency (1 text) | p95 | Batch throughput |
 |---|---|---|---|---|---|---|
-| PhoBERT-base-v2 fine-tuned | 0.8955 | 0.8001 | 0.8929 | 212.1 ms | 873.9 ms | 7 texts/s |
-| TF-IDF + linear SVM (calibrated) | 0.8689 | 0.7502 | 0.8629 | 7.4 ms | 17.8 ms | 5572 texts/s |
-| TF-IDF + Logistic Regression | 0.8639 | 0.7416 | 0.8591 | 3.0 ms | 6.4 ms | 4940 texts/s |
+| PhoBERT-base-v2 fine-tuned | 0.8955 | 0.8001 | 0.8929 | 82.6 ms | 109.4 ms | 15 texts/s |
+| TF-IDF + linear SVM (calibrated) | 0.8689 | 0.7502 | 0.8629 | 8.4 ms | 11.2 ms | 4038 texts/s |
+| TF-IDF + Logistic Regression | 0.8639 | 0.7416 | 0.8591 | 3.1 ms | 4.5 ms | 4746 texts/s |
 
 Per-class precision / recall / F1, best model (PhoBERT-base-v2 fine-tuned):
 
@@ -50,8 +50,8 @@ Most confident errors (PhoBERT-base-v2 fine-tuned): these pass the threshold and
 
 | Model | Accuracy | Macro-F1 | Weighted-F1 | p50 latency (1 text) | p95 | Batch throughput |
 |---|---|---|---|---|---|---|
-| TF-IDF + Logistic Regression | 0.8844 | 0.7524 | 0.8877 | 7.3 ms | 15.1 ms | 2060 texts/s |
-| TF-IDF + linear SVM (calibrated) | 0.8980 | 0.7174 | 0.8874 | 22.9 ms | 48.3 ms | 1484 texts/s |
+| TF-IDF + Logistic Regression | 0.8844 | 0.7524 | 0.8877 | 3.5 ms | 5.3 ms | 3924 texts/s |
+| TF-IDF + linear SVM (calibrated) | 0.8980 | 0.7174 | 0.8874 | 9.6 ms | 13.9 ms | 4010 texts/s |
 
 Per-class precision / recall / F1, best model (TF-IDF + Logistic Regression):
 

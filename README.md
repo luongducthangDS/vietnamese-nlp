@@ -46,9 +46,9 @@ Sentiment (priority): TF-IDF + LR accuracy 0.884, macro-F1 0.752. The neutral cl
 NER (span-level exact match, 24 types): CRF micro-F1 0.501, macro-F1 0.492. PhoBERT NER is ready to
 train on a GPU (`notebooks/colab_phobert.ipynb`); not yet run.
 
-Latency (one text, CPU, measured while another training job shared the CPU): TF-IDF + LR 3 ms p50;
-PhoBERT 212 ms p50 / 874 ms p95, including word segmentation. TF-IDF is around 70× faster, the
-trade-off behind offering both models in the API.
+Latency (one text, 12-thread laptop CPU, idle machine): TF-IDF + LR 3.1 ms p50 / 4.5 ms p95;
+PhoBERT 83 ms p50 / 109 ms p95 including word segmentation (15 texts/s batched vs ~4,700 for TF-IDF).
+TF-IDF is about 27× faster per text, the trade-off behind offering both models in the API.
 
 Full tables, confusion matrices and error examples: [docs/REPORT.md](docs/REPORT.md).
 
